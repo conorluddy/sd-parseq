@@ -3,8 +3,6 @@
   "version": "0.1.52",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -13,12 +11,6 @@
     "@mui/material": "^5.12.0",
     "@sentry/react": "^7.47.0",
     "@sentry/tracing": "^7.47.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@types/chart.js": "^2.9.37",
-    "@types/jest": "^29.5.0",
-    "@types/react": "^18.0.35",
-    "@types/react-dom": "^18.0.11",
     "@xzdarcy/react-timeline-editor": "^0.1.9",
     "ag-grid-community": "^29.2.0",
     "ag-grid-react": "^29.2.0",
@@ -51,8 +43,6 @@
     "moo": "^0.5.2",
     "nearley": "^2.20.1",
     "p5": "^1.6.0",
-    "path": "npm:path-browserify@^1.0.1",
-    "path-browserify": "^1.0.1",
     "pre-commit": "^1.2.2",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
@@ -114,14 +104,22 @@
     ]
   },
   "devDependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/chart.js": "^2.9.37",
     "@types/d3": "^7.4.0",
-    "@types/lodash": "^4.14.192",
+    "@types/jest": "^29.5.0",
     "@types/lodash.debounce": "^4.0.7",
+    "@types/lodash": "^4.14.192",
     "@types/nearley": "^2.11.2",
     "@types/node": "^18.15.11",
     "@types/p5": "^1.6.0",
     "@types/react-color": "^3.0.6",
     "@types/react-copy-to-clipboard": "^5.0.4",
+    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.0.35",
     "@types/seedrandom": "^3.0.5",
     "@types/uuid": "^9.0.1",
     "@types/wavesurfer.js": "^6.0.4",
@@ -129,6 +127,12 @@
     "buffer": "npm:buffer@6.0.3",
     "crypto": "npm:crypto-browserify@3.12.0",
     "eslint-config-react-app": "^7.0.1",
+    "path-browserify": "^1.0.1",
+    "path": "npm:path-browserify@^1.0.1",
     "react-git-info": "^2.0.1"
+  },
+  "overrides": {
+    "chart.js": "$chart.js",
+    "typescript": "^5.0.4"
   }
 }
